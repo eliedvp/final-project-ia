@@ -2,13 +2,15 @@
 
 Une application web moderne pour découvrir et écouter de la musique via l'API Deezer.
 
+L'application tient dans un seul fichier `index.html` (HTML, CSS et JavaScript intégrés, sans dépendance à installer).
+
 ## 🎵 Fonctionnalités
 
 - **Recherche musicale** : Trouvez des artistes et genres (ex: BOOBA, pop, rock)
 - **Lecteur audio** : Interface complète avec contrôles play/pause/suivant
 - **Barre de progression** : Navigation interactive avec clic pour avancer/reculer
 - **Affichage des pistes** : Galerie des meilleurs titres avec couvertures d'album
-- **Mode démo** : Pistes d'exemple locales en cas de problème d'API
+- **Mode démo** : Pistes d'exemple intégrées au code (extraits SoundHelix) en cas de problème d'API
 - **Contrôles clavier** : 
   - Espace : Play/Pause
   - Flèche droite : Piste suivante
@@ -38,7 +40,7 @@ Une application web moderne pour découvrir et écouter de la musique via l'API 
 - **CSS3** : Design moderne avec variables CSS et dégradés
 - **JavaScript ES6+** : Logique applicative et interactions
 - **API Deezer** : Source des données musicales
-- **Web Audio API** : Lecture des fichiers audio
+- **Élément HTML `<audio>`** : Lecture des extraits audio
 
 ## 🔧 Configuration API
 
@@ -47,7 +49,7 @@ L'application utilise plusieurs stratégies pour contourner les limitations CORS
 1. **Fetch direct** vers l'API Deezer
 2. **Proxy AllOrigins** en cas d'échec
 3. **JSONP** comme fallback historique
-4. **Pistes locales** en dernier recours
+4. **Pistes d'exemple intégrées** en dernier recours
 
 ## 🎨 Design
 
